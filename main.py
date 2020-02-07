@@ -152,10 +152,10 @@ class NMExtension(Extension):
 
             for w in wifis:
                 wifi = w.split(":")
-                name = wifi[1]
-                speed = wifi[4]
-                signal = wifi[5]
-                security = wifi[7]
+                name = wifi[7]
+                speed = wifi[10]
+                signal = wifi[11]
+                security = wifi[13]
                 if int(signal) > 70:
                     icon = "wifi-n3"
                 if (int(signal) > 30) and (int(signal) < 70):
